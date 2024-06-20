@@ -1,16 +1,14 @@
 let balance = 0
 
 
-// document.getElementById('depo').style = "display:none"
-//  document.getElementById('wid').style = "display:none"
 
 
 function deposit() {
-    let deposit = document.getElementById('deposit')
+
     let depo = document.getElementById('depo').value
     depo = Number(depo)
     
-    if (!isNaN(depo) && depo > 0) {
+    if ( depo > 0) {
         balance += depo;
       
         document.getElementById('depo').value = "";
@@ -18,31 +16,34 @@ function deposit() {
             deposited ammount : ${depo}
             `)
        
-    } else if(isNaN(depo)){
+    } else{
         alert('Please enter a valid deposit amount');
         document.getElementById('depo').value = "";
     }
 
 }
 
-function widow() {
-    let widrow = document.getElementById('widrow')
+function widrow() {
+   
     let wid = document.getElementById('wid').value
-    wid = Number(wid)
+    
 
-    if (!isNaN(wid) && wid > 0 && balance>wid) {
+    if ( wid > 0 && balance >= wid) {
+        balance -= wid
+        document.getElementById('wid').value = "";
         alert(`Thanks For widrow 
             widrow ammount : ${wid}
             `)
-        balance -= wid
-        document.getElementById("wid").value = "";
-    }else if(isNaN(wid)){
+
+       
+    }else{
+        document.getElementById('wid').value = "";
         alert(`
             Please enter a valid deposit amount
-            pleas cheack your bacnk Balance
+            pleas cheack your bank Balance
             `);
         
-        document.getElementById("wid").value = "";
+ 
     }
 }
 
@@ -55,37 +56,3 @@ function cheackBalance() {
 
 
 
-//open Clode Input Box{}
-
-
-// var depoOpen= 3
-
-// function displayInputDepo(){
-
-//     if(depoOpen==2){
-//         document.getElementById('depo').style = "display:none"
-        
-//         depoOpen=3  
-//     }else{
-//          document.getElementById('depo').style = "display:block"
-          
-//          depoOpen=2
-//     }
-    
-// }
-
-// var widOpen =3
-
-// function displayInputWid(){
-
-//     if(widOpen==2){
-//         document.getElementById('wid').style = "display:none"
-        
-//         widOpen=3  
-//     }else{
-//          document.getElementById('wid').style = "display:block"
-          
-//          widOpen=2
-//     }
-    
-// }
