@@ -47,8 +47,12 @@ input{
   justify-content: center;
   align-items: center;
 }
-
-
+.btn{
+   width: 500px;
+}
+.btn:hover{
+    width: 500px;
+ }
 
 
 h1{
