@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="bank.css">
 </head>
 <body>
+
+    
     <div class="container">
+        <h1>BANK ACCOUNT</h1>
         <div class="box1">
+      <h4> Deposit Amount : </h4>
             <input type="text" id="depo" value="">
             <button id="deposit" onclick="displayInputDepo(),deposit()" >Deposit</button>
       
 
         </div>
        <div class="box2">
+        <h4> Widrow Amount : </h4>
         <input type="text" id="wid"  value="" >
         <button id="widrow" onclick="displayInputWid(),widow()" >widrow</button>
        
@@ -24,11 +29,14 @@
        <div class="box3">
         <button id="cheeakBlance" onclick="cheackBalance()">cheeakbalance</button>
        </div>
+
+       <div>
+        <h1 id="bankBalance"></h1>
+       </div>
     </div>
 
-    <div class="container2">
-           <h1 id="bankBalance"></h1>
-    </div>
+   
+   
     <script src="js.js">
 
     </script>

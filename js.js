@@ -1,15 +1,15 @@
 let balance = 0
 
 
-document.getElementById('depo').style = "display:none"
- document.getElementById('wid').style = "display:none"
+// document.getElementById('depo').style = "display:none"
+//  document.getElementById('wid').style = "display:none"
 
 
 function deposit() {
     let deposit = document.getElementById('deposit')
     let depo = document.getElementById('depo').value
     depo = Number(depo)
-   
+    
     if (!isNaN(depo) && depo > 0) {
         balance += depo;
       
@@ -48,7 +48,7 @@ function widow() {
 
 function cheackBalance() {
     console.log("current balacnce id :" + balance)
-    document.getElementById("bankBalance").innerHTML="Your Balace Is : "+balance;
+    document.getElementById("bankBalance").innerHTML="Your Balace Is : "+balance+"$";
     
 }
 
@@ -58,34 +58,34 @@ function cheackBalance() {
 //open Clode Input Box{}
 
 
-var depoOpen= 3
+// var depoOpen= 3
 
-function displayInputDepo(){
+// function displayInputDepo(){
 
-    if(depoOpen==2){
-        document.getElementById('depo').style = "display:none"
+//     if(depoOpen==2){
+//         document.getElementById('depo').style = "display:none"
         
-        depoOpen=3  
-    }else{
-         document.getElementById('depo').style = "display:block"
+//         depoOpen=3  
+//     }else{
+//          document.getElementById('depo').style = "display:block"
           
-         depoOpen=2
-    }
+//          depoOpen=2
+//     }
     
-}
+// }
 
-var widOpen =3
+// var widOpen =3
 
-function displayInputWid(){
+// function displayInputWid(){
 
-    if(widOpen==2){
-        document.getElementById('wid').style = "display:none"
+//     if(widOpen==2){
+//         document.getElementById('wid').style = "display:none"
         
-        widOpen=3  
-    }else{
-         document.getElementById('wid').style = "display:block"
+//         widOpen=3  
+//     }else{
+//          document.getElementById('wid').style = "display:block"
           
-         widOpen=2
-    }
+//          widOpen=2
+//     }
     
-}
+// }
